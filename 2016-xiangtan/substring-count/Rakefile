@@ -1,0 +1,15 @@
+require_relative '../../common'
+
+sample '001.hand'
+sample '002.hand'
+
+test "001.hand"
+test "002.hand"
+test :random, 50000, 100000, "ab", 1
+test :random, 50000, 100000, "abcdefghijklmnopqrstuvwxyz", 1
+test :random, 50000, 100000, "ab", 10
+test :random, 50000, 100000, "abcdefghijklmnopqrstuvwxyz", 10
+test :random, 50000, 100000, "ab", 100
+test :random, 50000, 100000, "abcdefghijklmnopqrstuvwxyz", 100
+test :random, 50000, 100000, "ab", 1000
+test :random, 50000, 100000, "abcdefghijklmnopqrstuvwxyz", 1000
