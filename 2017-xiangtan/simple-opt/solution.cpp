@@ -1,7 +1,7 @@
 #include <algorithm>
 #include <iostream>
 
-int gcd(int a, int b)
+long long gcd(long long a, long long b)
 {
     return b == 0 ? a : gcd(b, a % b);
 }
