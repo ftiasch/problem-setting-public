@@ -1,0 +1,8 @@
+require_relative '../../common'
+
+sample '001.hand'
+
+tests = []
+95.times { tests << [:random, 8, 1000] }
+5.times { tests << [:random, 26, 1000] }
+multitest *tests

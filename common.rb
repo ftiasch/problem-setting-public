@@ -29,7 +29,7 @@ def make_target(symbol)
   when 'cpp'
     target = "#{b}.exe"
     file target => "#{b}.cpp" do
-      sh "c++ ${CXXFLAGS} #{b}.cpp -o#{b}.exe"
+      sh "c++ -I../.. ${CXXFLAGS} #{b}.cpp -o#{b}.exe"
     end
   when 'java'
     target = "#{b}.class"
