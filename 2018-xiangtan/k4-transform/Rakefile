@@ -1,0 +1,4 @@
+require_relative '../../common'
+
+sample '001.hand'
+test :gen, 4, 10, 5000

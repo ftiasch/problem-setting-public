@@ -1,0 +1,7 @@
+require_relative '../../common'
+
+sample '001.hand'
+
+multitest *[
+    *[*1..10].map { [:gen, 50, 10 ** 9, 10 ** 9] },
+]

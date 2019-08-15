@@ -1,0 +1,17 @@
+require_relative '../../common'
+
+sample '001.hand'
+
+max, n = 2000000000, 10 ** 3
+types = [
+    [max - 1, max, max - 1, max],
+    [max - 1, max, 1, 2],
+    [1, max, 1, max],
+    [max - n, max, max - n, max],
+    [max - n, max, 1, n]
+]
+
+multitest *[
+    *types.map { |t| [:gen, 1000, *t] },
+    [:gen, 1000, 1, max, 1, max]
+]

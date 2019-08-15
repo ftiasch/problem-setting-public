@@ -1,0 +1,10 @@
+require_relative '../../common'
+
+sample '001.hand'
+
+multitest *[
+    [:all, 4],
+    *[*1..30].map { [:random, 1000, 0, 5] },
+    [:random, 1000, 0, 10 ** 9],
+    [:random, 200_000, 0, 1]
+]

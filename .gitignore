@@ -1,0 +1,5 @@
+*/release/
+*.exe
+*/*/aux/
+*/*/samples/
+*/*/tests/
