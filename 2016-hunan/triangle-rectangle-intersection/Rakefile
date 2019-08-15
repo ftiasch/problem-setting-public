@@ -1,0 +1,8 @@
+require_relative '../../common'
+
+sample '001.hand'
+sample '002.hand'
+sample :random, 1, 10000, seed: 4
+
+1.upto(3) { |m| test :fixed, m }
+1.upto(4) { |w| test :random, 5000, 10 ** w }

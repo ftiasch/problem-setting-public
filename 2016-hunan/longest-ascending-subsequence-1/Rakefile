@@ -1,0 +1,10 @@
+require_relative '../../common'
+
+sample '001.hand'
+sample '002.hand'
+sample '003.hand'
+
+100.times { test :random, 5, 0 }
+100.times { test :random, 20, 0 }
+10.times { |i| test :random, 1000, 2 ** (i / 3) }
+10.times { |i| test :random, 100000, 2 ** (i / 2) }

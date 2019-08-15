@@ -1,0 +1,10 @@
+require_relative '../../common'
+
+sample '001.hand'
+sample '002.hand'
+test '003.hand'
+[-2, 1].each { |w|
+  10.times {
+    test :random, 10, 10 ** 3, w
+  }
+}

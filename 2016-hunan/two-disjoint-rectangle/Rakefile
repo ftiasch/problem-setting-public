@@ -1,0 +1,7 @@
+require_relative '../../common'
+
+sample '001.hand'
+sample '002.hand'
+test '003.hand'
+test :random, 1, 10 ** 3, 0
+5.times { |w| test :random, 10 ** 3, 10 ** 3, w }
