@@ -1,0 +1,41 @@
+\begin{problem}{Around the World}{standard input}{standard output}{1 second}{1024 megabytes}
+
+In ICPCCamp, there are $n$ cities and $(n - 1)$ (bidirectional) roads between cities.
+The $i$-th road is between the $a_i$-th and $b_i$-th cities.
+It is guaranteed that cities are connected.
+
+Recently, there are $2 \times c_i - 1$ new roads built between the $a_i$-th and $b_i$-th cities.
+Bobo soon comes up with an idea to travel around the world! 
+He plans to start in city $1$ and returns to city $1$ after traveling along every road exactly once.
+
+It is clear that Bobo has many plans to choose from.
+He would like to find out the number of different plans, modulo $(10^9+7)$.
+
+Note that two plans $A$ and $B$ are considered different only if there exists an $i$ where the $i$-th traveled road in plan $A$ is different from the $i$-th road in plan $B$.
+
+
+\InputFile
+The first line contains an integer $n$ ($2 \leq n \leq 10^5$). 
+
+The $i$-th of the following $(n - 1)$ lines contains $3$ integers $a_i, b_i, c_i$ ($1 \leq a_i, b_i \leq n, c_i \geq 1, c_1 + c_2 + \dots + c_{n - 1} \leq 10^6$). 
+
+\OutputFile
+An integer denotes the number of plans modulo $(10^9+7)$.
+
+\Examples
+
+\begin{example}
+\exmp{3
+1 2 1
+2 3 1
+}{4
+}%
+\exmp{3
+1 2 1
+1 3 2
+}{144
+}%
+\end{example}
+
+\end{problem}
+

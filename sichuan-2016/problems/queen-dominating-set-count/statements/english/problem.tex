@@ -1,0 +1,32 @@
+\begin{problem}{Eight Queens}{standard input}{standard output}{2 seconds}{1024 megabytes}
+
+In ICPCCamp, there is a chessboard with $n$ rows and $m$ columns.
+
+Bobo places $k$ distinguishable queens in $k$ different cells on the chessboard. 
+There are $t = \binom{n \times m}{k}$ different configurations
+where $$\binom{n}{k} = \frac{n(n - 1)\dots (n - k + 1)}{k(k - 1)(k - 2)\dots 1}.$$
+
+If $c_i$ is the number of cells attacked by at least one queen in the $i$-th configuration,
+find out $(c_1 + c_2 + \dots + c_t)$ modulo $(10^9+7)$.
+
+Note that a queen can attack all cells in the same row, column and diagonal including the cell she stands on. 
+
+\InputFile
+$3$ integers $n, m, k$ ($1 \leq n, m \leq 10^9, 1 \leq k \leq \min\{n \times m, 8\}$). 
+
+\OutputFile
+An integer denotes $(c_1 + c_2 + \dots + c_{t})$ modulo $(10^9+7)$.
+
+\Examples
+
+\begin{example}
+\exmp{2 2 2
+}{24
+}%
+\exmp{8 8 8
+}{723759469
+}%
+\end{example}
+
+\end{problem}
+

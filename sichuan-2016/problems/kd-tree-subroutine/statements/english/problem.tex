@@ -1,0 +1,39 @@
+\begin{problem}{Nearest Neighbor Search}{standard input}{standard output}{1 second}{1024 megabytes}
+
+Bobo has a point $p$ and a cube $C$ in $3$-dimension space.
+The point locates at coordinate $(x_0, y_0, z_0)$, 
+while $$C = \{(x, y, z) : x_1 \leq x \leq x_2, y_1 \leq y \leq y_2, z_1 \leq z \leq z_2\}.$$
+
+Bobo would like to find another point $q$ which locates inside or on the surface of the cube $C$ so that the square distance between point $p$ and $q$ is minimized.
+
+Note that the square distance between point $(x, y, z)$ and $(x', y', z')$ is $(x - x')^2 + (y - y')^2 + (z - z')^2$.
+
+\InputFile
+The first line contains $3$ integers $x_0, y_0, z_0$.
+
+The second line contains $3$ integers $x_1, y_1, z_1$.
+
+The third line contains $3$ integers $x_2, y_2, z_2$.
+
+($|x_i|, |y_i|, |z_i| \leq 10^4, x_1 < x_2, y_1 < y_2, z_1 < z_2$)
+
+\OutputFile
+An integer denotes the minimum square distance.
+
+\Examples
+
+\begin{example}
+\exmp{0 0 0
+1 1 1
+2 2 2
+}{3
+}%
+\exmp{1 1 1
+0 0 0
+2 2 2
+}{0
+}%
+\end{example}
+
+\end{problem}
+

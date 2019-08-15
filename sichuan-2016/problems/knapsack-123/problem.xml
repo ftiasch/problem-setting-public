@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="4" short-name="knapsack-123" url="https://polygon.codeforces.com/p/ftiasch/knapsack-123">
+    <names>
+        <name language="english" value="Coins"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="english" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement language="english" path="statements/.pdf/english/problem.pdf" type="application/pdf"/>
+        <statement charset="UTF-8" language="english" path="statements/.html/english/problem.html" type="text/html"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz" cpu-speed="3600" input-file="" output-file="">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>1073741824</memory-limit>
+            <test-count>83</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test method="manual" sample="true"/>
+                <test method="manual" sample="true"/>
+                <test cmd="random 1000 1" method="generated"/>
+                <test cmd="random 1000 2" method="generated"/>
+                <test cmd="random 1000 3" method="generated"/>
+                <test cmd="random 1000 4" method="generated"/>
+                <test cmd="random 1000 5" method="generated"/>
+                <test cmd="random 1000 6" method="generated"/>
+                <test cmd="random 1000 7" method="generated"/>
+                <test cmd="random 1000 8" method="generated"/>
+                <test cmd="random 1000 9" method="generated"/>
+                <test cmd="random 1000 10" method="generated"/>
+                <test cmd="random 1000 11" method="generated"/>
+                <test cmd="random 1000 12" method="generated"/>
+                <test cmd="random 1000 13" method="generated"/>
+                <test cmd="random 1000 14" method="generated"/>
+                <test cmd="random 1000 15" method="generated"/>
+                <test cmd="random 1000 16" method="generated"/>
+                <test cmd="random 1000 17" method="generated"/>
+                <test cmd="random 1000 18" method="generated"/>
+                <test cmd="random 1000 19" method="generated"/>
+                <test cmd="random 1000 20" method="generated"/>
+                <test cmd="random 1000 21" method="generated"/>
+                <test cmd="random 1000 22" method="generated"/>
+                <test cmd="random 1000 23" method="generated"/>
+                <test cmd="random 1000 24" method="generated"/>
+                <test cmd="random 1000 25" method="generated"/>
+                <test cmd="random 1000 26" method="generated"/>
+                <test cmd="random 1000 27" method="generated"/>
+                <test cmd="random 1000000 1" method="generated"/>
+                <test cmd="random 1000000 2" method="generated"/>
+                <test cmd="random 1000000 3" method="generated"/>
+                <test cmd="random 1000000 4" method="generated"/>
+                <test cmd="random 1000000 5" method="generated"/>
+                <test cmd="random 1000000 6" method="generated"/>
+                <test cmd="random 1000000 7" method="generated"/>
+                <test cmd="random 1000000 8" method="generated"/>
+                <test cmd="random 1000000 9" method="generated"/>
+                <test cmd="random 1000000 10" method="generated"/>
+                <test cmd="random 1000000 11" method="generated"/>
+                <test cmd="random 1000000 12" method="generated"/>
+                <test cmd="random 1000000 13" method="generated"/>
+                <test cmd="random 1000000 14" method="generated"/>
+                <test cmd="random 1000000 15" method="generated"/>
+                <test cmd="random 1000000 16" method="generated"/>
+                <test cmd="random 1000000 17" method="generated"/>
+                <test cmd="random 1000000 18" method="generated"/>
+                <test cmd="random 1000000 19" method="generated"/>
+                <test cmd="random 1000000 20" method="generated"/>
+                <test cmd="random 1000000 21" method="generated"/>
+                <test cmd="random 1000000 22" method="generated"/>
+                <test cmd="random 1000000 23" method="generated"/>
+                <test cmd="random 1000000 24" method="generated"/>
+                <test cmd="random 1000000 25" method="generated"/>
+                <test cmd="random 1000000 26" method="generated"/>
+                <test cmd="random 1000000 27" method="generated"/>
+                <test cmd="random 1000000000 1" method="generated"/>
+                <test cmd="random 1000000000 2" method="generated"/>
+                <test cmd="random 1000000000 3" method="generated"/>
+                <test cmd="random 1000000000 4" method="generated"/>
+                <test cmd="random 1000000000 5" method="generated"/>
+                <test cmd="random 1000000000 6" method="generated"/>
+                <test cmd="random 1000000000 7" method="generated"/>
+                <test cmd="random 1000000000 8" method="generated"/>
+                <test cmd="random 1000000000 9" method="generated"/>
+                <test cmd="random 1000000000 10" method="generated"/>
+                <test cmd="random 1000000000 11" method="generated"/>
+                <test cmd="random 1000000000 12" method="generated"/>
+                <test cmd="random 1000000000 13" method="generated"/>
+                <test cmd="random 1000000000 14" method="generated"/>
+                <test cmd="random 1000000000 15" method="generated"/>
+                <test cmd="random 1000000000 16" method="generated"/>
+                <test cmd="random 1000000000 17" method="generated"/>
+                <test cmd="random 1000000000 18" method="generated"/>
+                <test cmd="random 1000000000 19" method="generated"/>
+                <test cmd="random 1000000000 20" method="generated"/>
+                <test cmd="random 1000000000 21" method="generated"/>
+                <test cmd="random 1000000000 22" method="generated"/>
+                <test cmd="random 1000000000 23" method="generated"/>
+                <test cmd="random 1000000000 24" method="generated"/>
+                <test cmd="random 1000000000 25" method="generated"/>
+                <test cmd="random 1000000000 26" method="generated"/>
+                <test cmd="random 1000000000 27" method="generated"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/random.cpp" type="cpp.g++11"/>
+                <binary path="files/random.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/validator.cpp" type="cpp.g++11"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::ncmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validator.cpp" type="cpp.g++11"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>0</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests/>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/slow.cpp" type="cpp.g++11"/>
+                <binary path="solutions/slow.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/solution.cpp" type="cpp.g++11"/>
+                <binary path="solutions/solution.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+    <tags>
+        <tag value="maths"/>
+    </tags>
+</problem>

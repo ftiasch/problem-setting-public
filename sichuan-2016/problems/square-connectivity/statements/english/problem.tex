@@ -1,0 +1,43 @@
+\begin{problem}{Road History}{standard input}{standard output}{1 second}{1024 megabytes}
+
+Bobo is studying the history of roads in ICPCCamp.
+In ICPCCamp, there are $n$ cities with $m$ bidirectional roads.
+The $i$-th road connects the $a_i$-th and $b_i$-th cities.
+
+There were no roads initially.
+Eventually, roads were built in the order $1, 2, \dots m$. 
+ 
+Bobo would like to know the number of pairs of cities which allow an \textit{odd drive} after the $i$-th road was built.
+An \textit{odd drive} between cities $u$ and $v$ is possible only if there exists $v_1, v_2, \dots, v_{2k}$ for some positive integers $k$ such that $v_1 = u, v_{2k} = v$ and there is a road connecting cities $v_i$ and $v_{i + 1}$. Passing by a city more than once is allowed. 
+
+\InputFile
+The first line contains $2$ integers $n, m$ ($1 \leq n, m \leq 10^5$). 
+
+The $i$-th of the following $m$ lines contains $2$ integers $a_i, b_i$ ($1 \leq a_i, b_i \leq n$). 
+
+\OutputFile
+$m$ lines with integers $w_1, w_2, \dots, w_m$ where $w_i$ denotes the number of pairs allowing an odd drive after the $i$-th road was built.
+
+\Examples
+
+\begin{example}
+\exmp{3 3
+1 2
+2 3
+3 1
+}{1
+2
+3
+}%
+\exmp{4 3
+1 2
+3 4
+2 3
+}{1
+2
+4
+}%
+\end{example}
+
+\end{problem}
+

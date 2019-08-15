@@ -1,0 +1,21 @@
+#include "testlib.h"
+
+int main()
+{
+    registerValidation();
+    int n = inf.readInt(1, 250);
+    inf.readSpace();
+    int q = inf.readInt(1, 100000);
+    inf.readEoln();
+    for (int _ = 0; _ < q; ++ _) {
+        inf.readInt(1, 2);
+        inf.readSpace();
+        int l = inf.readInt(0, n - 1);
+        inf.readSpace();
+        inf.readInt(l, n - 1);
+        inf.readSpace();
+        inf.readInt(0, n - 1);
+        inf.readEoln();
+    }
+    inf.readEof();
+}

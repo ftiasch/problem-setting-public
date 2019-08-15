@@ -1,0 +1,48 @@
+\begin{problem}{Matrix Transformation}{standard input}{standard output}{1 second}{1024 megabytes}
+
+Bobo has a matrix of $n$ rows and $n$ columns.
+The rows are numbered by $0, 1, \dots, (n - 1)$ from top to bottom,
+and the columns are numbered by $0, 1, \dots, (n - 1)$ from left to right.
+The cell in the intersection of the $i$-th row and the $j$-th column is denoted as $(i, j)$.
+For each cell $(i, j)$, there is a number $i \times n + j$ written in.
+
+Bobo is going to perform $q$ transformations successively.
+The transformations are of $2$ kinds. 
+The $i$-th transformation is of $t_i$-th kind, and it's described by $3$ parameters $l_i, r_i, d_i$.
+
+If $t_i = 1$, the number in cell $(x, (y + d_i) \bmod n)$ where $l_i \leq x \leq r_i, 0 \leq y < n$ will be transferred to the cell $(x, y)$ by the transformation. 
+
+If $t_i = 2$, the number in cell $((x + d_i) \bmod n, y)$ where $0 \leq x < n, l_i \leq y \leq r_i$ will be transferred to the cell $(x, y)$ by the transformation. 
+
+Note that $a \bmod b$ means the remainder of $a$ after division by $b$.
+
+Bobo would like to know the final configuration of the matrix.
+
+\InputFile
+The first line contains $2$ integers $n, q$ ($1 \leq n \leq 200, 1 \leq q \leq 10^5$). 
+
+The $i$-th of the following $q$ lines contains $4$ integers $t_i, l_i, r_i, d_i$ ($t_i \in \{1, 2\}, 0 \leq l_i \leq r_i < n, 0 \leq d_i < n$). 
+
+\OutputFile
+$n$ lines. The $i$-th line contains $n$ integers $a_{i, 0}, a_{i, 1}, \dots, a_{i, n - 1}$ which denotes the final number in cell $(i, j)$.
+
+\Examples
+
+\begin{example}
+\exmp{3 2
+1 1 1 1
+2 1 1 1
+}{0 5 2
+4 7 3
+6 1 8
+}%
+\exmp{3 1
+1 0 2 1
+}{1 2 0
+4 5 3
+7 8 6
+}%
+\end{example}
+
+\end{problem}
+

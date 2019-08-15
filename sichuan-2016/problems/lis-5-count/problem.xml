@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="2" short-name="lis-5-count" url="https://polygon.codeforces.com/p/ftiasch/lis-5-count">
+    <names>
+        <name language="english" value="Longest Increasing Subsequence"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="english" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement language="english" path="statements/.pdf/english/problem.pdf" type="application/pdf"/>
+        <statement charset="UTF-8" language="english" path="statements/.html/english/problem.html" type="text/html"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz" cpu-speed="3600" input-file="" output-file="">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>1073741824</memory-limit>
+            <test-count>33</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test method="manual" sample="true"/>
+                <test method="manual" sample="true"/>
+                <test method="manual"/>
+                <test cmd="random 1 10 1" method="generated"/>
+                <test cmd="random 1 10 2" method="generated"/>
+                <test cmd="random 2 10 1" method="generated"/>
+                <test cmd="random 2 10 2" method="generated"/>
+                <test cmd="random 3 10 1" method="generated"/>
+                <test cmd="random 3 10 2" method="generated"/>
+                <test cmd="random 4 10 1" method="generated"/>
+                <test cmd="random 4 10 2" method="generated"/>
+                <test cmd="random 5 10 1" method="generated"/>
+                <test cmd="random 5 10 2" method="generated"/>
+                <test cmd="random 5 100 1" method="generated"/>
+                <test cmd="random 5 100 2" method="generated"/>
+                <test cmd="random 5 100 3" method="generated"/>
+                <test cmd="random 5 100 4" method="generated"/>
+                <test cmd="random 5 100 5" method="generated"/>
+                <test cmd="random 5 100 6" method="generated"/>
+                <test cmd="random 5 100 7" method="generated"/>
+                <test cmd="random 5 100 8" method="generated"/>
+                <test cmd="random 5 100 9" method="generated"/>
+                <test cmd="random 5 100 10" method="generated"/>
+                <test cmd="random 5 1000 1" method="generated"/>
+                <test cmd="random 5 1000 2" method="generated"/>
+                <test cmd="random 5 1000 3" method="generated"/>
+                <test cmd="random 5 1000 4" method="generated"/>
+                <test cmd="random 5 1000 5" method="generated"/>
+                <test cmd="random 5 1000 6" method="generated"/>
+                <test cmd="random 5 1000 7" method="generated"/>
+                <test cmd="random 5 1000 8" method="generated"/>
+                <test cmd="random 5 1000 9" method="generated"/>
+                <test cmd="random 5 1000 10" method="generated"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/random.cpp" type="cpp.g++"/>
+                <binary path="files/random.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/validator.cpp" type="cpp.g++11"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::ncmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validator.cpp" type="cpp.g++11"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>0</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests/>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/slow.cpp" type="cpp.g++11"/>
+                <binary path="solutions/slow.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/solution.cpp" type="cpp.g++11"/>
+                <binary path="solutions/solution.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+    <tags>
+        <tag value="dynamic programming"/>
+    </tags>
+</problem>

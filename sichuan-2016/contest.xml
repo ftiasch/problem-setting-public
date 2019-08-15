@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<contest url="https://polygon.codeforces.com/c/3956">
+    <names>
+        <name language="english" value="Sichuan Province Programming Contest 2016"/>
+    </names>
+    <statements>
+        <statement language="english" type="application/pdf" url="https://polygon.codeforces.com/c/3956/english/statements.pdf"/>
+    </statements>
+    <problems>
+        <problem index="a" url="https://polygon.codeforces.com/p/ftiasch/kd-tree-subroutine"/>
+        <problem index="b" url="https://polygon.codeforces.com/p/ftiasch/odd-discount"/>
+        <problem index="c" url="https://polygon.codeforces.com/p/ftiasch/queen-dominating-set-count"/>
+        <problem index="d" url="https://polygon.codeforces.com/p/ftiasch/set-longest-common-subsequence"/>
+        <problem index="e" url="https://polygon.codeforces.com/p/ftiasch/knapsack-123"/>
+        <problem index="f" url="https://polygon.codeforces.com/p/ftiasch/sparse-graph-shortest-path-query"/>
+        <problem index="g" url="https://polygon.codeforces.com/p/ftiasch/square-connectivity"/>
+        <problem index="h" url="https://polygon.codeforces.com/p/ftiasch/tree-eulerian-cycle-count"/>
+        <problem index="i" url="https://polygon.codeforces.com/p/ftiasch/lis-5-count"/>
+        <problem index="j" url="https://polygon.codeforces.com/p/ftiasch/matrix-shift"/>
+    </problems>
+</contest>

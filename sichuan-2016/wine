@@ -1,0 +1,6 @@
+#!/bin/bash
+
+path=${1%.exe}
+make $path >/dev/null 2>/dev/null
+shift
+./$path $@

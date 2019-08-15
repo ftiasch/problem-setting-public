@@ -1,0 +1,45 @@
+\begin{problem}{Odd Discount}{standard input}{standard output}{1 second}{1024 megabytes}
+
+In the store of ICPCCamp, there are $n$ items to be sold with $m$ bundles offered.
+
+The $i$-th bundle is described by $c_i$ and $k_i$ \textbf{distinct} integers $a_{i, 1}, a_{i, 2}, \dots, a_{i, k_i}$.
+It means that one gets $c_i$ dollars discount if among the $a_{i, 1}, a_{i, 2}, \dots, a_{i, k_i}$-th items, he buys exactly odd number of them. Bundles can be combined.
+
+Bobo wants to buy a non-empty subset of the items.
+It is clear there are $(2^n - 1)$ different sets for him.
+Find out $(d_1^2 + d_2^2 + \dots + d_{2^n - 1}^2)$ modulo $(10^9+7)$ where $d_i$ is the sum of discount for the $i$-th set.
+
+\InputFile
+The first line contains $2$ integers $n, m$ ($1 \leq n \leq 20, 1 \leq m \leq 10^5$). 
+
+The $i$-th of the following $m$ lines contains integers $c_i, k_i$, followed by $k_i$ integers $a_{i, 1}, a_{i, 2}, \dots, a_{i, k_i}$ ($1 \leq c_i \leq 10^4, 1 \leq a_{i, 1}, a_{i, 2}, \dots, a_{i, k_i} \leq n$). 
+
+\OutputFile
+An integer denotes $(d_1^2+d_2^2+\dots+d_{2^n-1}^2)$ modulo $(10^9+7)$.
+
+\Examples
+
+\begin{example}
+\exmp{2 2
+1 1 1
+2 2 1 2
+}{14
+}%
+\exmp{1 1
+1 1 1
+}{1
+}%
+\end{example}
+
+\Note
+In the first sample, there are $3$ possibilities for Bobo.
+\begin{itemize}
+\item He buys the first item and uses both bundles.
+\item He buys the second item and uses the second bundle solely.
+\item He buys both items and uses the first bundle.
+\end{itemize}
+
+Therefore, $d_1 = 3, d_2 = 2, d_3 = 1$ and $d_1^2 + d_2^2 + d_3^2 = 14$.
+
+\end{problem}
+
