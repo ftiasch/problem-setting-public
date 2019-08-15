@@ -22,3 +22,5 @@ $$\sum_{i = 1}^n\sum_{j = 1}^n \mathrm{count}(i, j) \cdot a_i \cdot b_j$$
 ## 输出
 
 对于每组数据，输出一个整数表示要求的值。
+
+<!--SAMPLES-->

@@ -25,3 +25,5 @@ The $i$-th of the last $q$ lines contains $2$ integers $a_i, b_i$ ($1 \leq a_i, 
 ## Output
 
 For each question, output "`Yes`" if $P$ remains balanced, or "`No`" otherwise.
+
+<!--SAMPLES-->

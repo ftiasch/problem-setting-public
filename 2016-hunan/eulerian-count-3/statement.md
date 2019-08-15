@@ -21,3 +21,5 @@ The first line contains $3$ integers $a, b, c$ ($1 \leq a, b, c \leq 10^5$).
 ## Output
 
 For each set, an integer denotes the number of different ways modulo $(10^9+7)$.
+
+<!--SAMPLES-->

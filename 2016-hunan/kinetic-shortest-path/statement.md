@@ -29,3 +29,5 @@ It is guaranteed that Bobo is able to drive from city $1$ to city $n$.
 
 A floating number denotes the answer.
 It will be considered correct if its absolute or relative error does not exceed $10^{-6}$.
+
+<!--SAMPLES-->

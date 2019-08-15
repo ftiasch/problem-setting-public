@@ -22,3 +22,5 @@ The $i$-th of the last $(n - 1)$ lines contains $2$ integers $a_i, b_i$
 ## Output
 
 For each set, $(n - 1)$ integers $R_1, R_2, \dots, R_{n - 1}$.
+
+<!--SAMPLES-->

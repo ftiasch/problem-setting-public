@@ -17,3 +17,5 @@ The second line contains $n$ digits $d_1d_2\dots d_n$ $(0 \leq d_i \leq 9)$.
 ## Output
 
 For each set, an integer denotes the result.
+
+<!--SAMPLES-->
