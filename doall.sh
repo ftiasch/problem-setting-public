@@ -37,10 +37,8 @@ for problem in $(cat PROBLEMS); do
     if [ -f $problem/slow.cpp ]; then
         cp $problem/slow.cpp      $problem_release/slow.cpp
     fi
-    cp $problem/samples/001   $problem_release/sample.in
-    cp $problem/samples/001.a $problem_release/sample.out
-    cp $problem/tests/001     $problem_release/test.in
-    cp $problem/tests/001.a   $problem_release/test.out
+    cp -r $problem/samples $problem_release
+    cp -r $problem/tests   $problem_release
 
     if test -f $problem/statement.cn.md; then
         cat $problem/statement.cn.md >> $STATEMENT
