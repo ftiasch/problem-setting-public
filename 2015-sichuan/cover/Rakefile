@@ -1,0 +1,58 @@
+require_relative '../../common'
+
+sample '001.hand'
+sample '002.hand'
+
+test "001.hand"
+test "002.hand"
+test "003.hand"
+test :random, 1, 500, 30, 1000
+test :random, 3, 500, 30, 1000
+test :random, 10, 500, 30, 1000
+test :random, 12, 500, 30, 1000
+test :random, 14, 500, 30, 1000
+test :random, 21, 500, 30, 1000
+test :random, 23, 500, 30, 1000
+test :random, 30, 500, 30, 1000
+test :random, 32, 500, 30, 1000
+test :random, 34, 500, 30, 1000
+test :random, 36, 500, 30, 1000
+test :random, 38, 500, 30, 1000
+test :random, 40, 500, 30, 1000
+test :random, 43, 500, 30, 1000
+test :random, 45, 500, 30, 1000
+test :random, 51, 500, 30, 1000
+test :random, 58, 500, 30, 1000
+test :random, 60, 500, 30, 1000
+test :random, 62, 500, 30, 1000
+test :random, 69, 500, 30, 1000
+test :random, 71, 500, 30, 1000
+test :random, 73, 500, 30, 1000
+test :random, 75, 500, 30, 1000
+test :random, 77, 500, 30, 1000
+test :random, 84, 500, 30, 1000
+test :random, 88, 500, 30, 1000
+test :random, 92, 500, 30, 1000
+test :random, 97, 500, 30, 1000
+test :random, 101, 500, 30, 1000
+test :random, 104, 500, 30, 1000
+test :random, 105, 500, 30, 1000
+test :random, 106, 500, 30, 1000
+test :random, 108, 500, 30, 1000
+test :random, 112, 500, 30, 1000
+test :random, 116, 500, 30, 1000
+test :random, 119, 500, 30, 1000
+test :random, 121, 500, 30, 1000
+test :random, 123, 500, 30, 1000
+test :random, 125, 500, 30, 1000
+test :random, 127, 500, 30, 1000
+test :random, 128, 500, 30, 1000
+test :random, 129, 500, 30, 1000
+test :random, 131, 500, 30, 1000
+test :random, 132, 500, 30, 1000
+test :random, 134, 500, 30, 1000
+test :random, 136, 500, 30, 1000
+test :random, 144, 500, 30, 1000
+test :random, 149, 500, 30, 1000
+test :random, 151, 500, 30, 1000
+test :random, 153, 500, 30, 1000
