@@ -1,0 +1,8 @@
+require_relative '../../common'
+
+sample '001.hand'
+
+multitest *[
+  [:random, 99, -50, -50],
+  [:random, 1, 50, 50],
+]

@@ -1,0 +1,8 @@
+require_relative '../../common'
+
+sample '001.hand'
+
+multitest *[
+  [:enumerate, 100, 10**18],
+  [:enumerate2, 94951],
+]
