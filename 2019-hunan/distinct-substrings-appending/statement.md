@@ -17,7 +17,7 @@ The second line contains $n$ integers $s_1, s_2, \dots, s_n$.
 
 * $1 \leq n, m \leq 10^6$
 * $1 \leq s_i \leq m$
-* The sum of $n$ does not exceed $5 \times 10^6$.
+* The sum of $n$, and the sum of $m$ do not exceed $5 \times 10^6$.
 
 ## Output
 
