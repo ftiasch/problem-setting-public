@@ -98,7 +98,7 @@ int main() {
           int z = (u64)twiddle2 * a[r + m * 2] % p;
           a[r + m] = (a[r] + (u64)w1 * y + (u64)w2 * z) % p;
           a[r + m * 2] = (a[r] + (u64)w2 * y + (u64)w1 * z) % p;
-          a[r] = (a[r] + y + z) % p;
+          a[r] = ((u64)a[r] + y + z) % p;
           twiddle = (u64)twiddle * g % p;
         }
       }
