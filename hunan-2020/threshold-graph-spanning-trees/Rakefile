@@ -1,0 +1,11 @@
+require_relative '../../common'
+
+packed {
+  sample '001.hand'
+  2.upto(10) do |n|
+    test :random, 2 ** (n + 1), n
+  end
+  [100, 10 ** 3, 10 ** 4, 10 ** 5].each do |n|
+    test :random, 10 ** 5 / n, n
+  end
+}

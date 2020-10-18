@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env zsh
+# https://stackoverflow.com/a/19648328
+ulimit -s unlimited
+
 set -o errexit
 
 if [[ "$#" != 1 ]]; then
@@ -19,7 +22,6 @@ RELEASE='release'
 mkdir -p $RELEASE
 
 STATEMENT=$RELEASE/statement.md
-echo $STATEMENT
 echo '' > $STATEMENT
 
 problem_count=64
@@ -32,13 +34,15 @@ for problem in $(cat PROBLEMS); do
     problem_release=$RELEASE/$code
     mkdir -p $problem_release
 
-    cp $problem/solution.cpp  $problem_release/solution.cpp
-    cp $problem/check.cpp     $problem_release/check.cpp
-    if [ -f $problem/slow.cpp ]; then
-        cp $problem/slow.cpp      $problem_release/slow.cpp
-    fi
+    cp $problem/solution.{cc,cpp,py} $problem_release/ 2>/dev/null || true
+    cp $problem/slow.{cc,cpp} $problem_release/ 2>/dev/null || true
+    cp $problem/check.{cc,cpp} $problem_release/ 2>/dev/null || true
     cp -r $problem/samples $problem_release
-    cp -r $problem/tests   $problem_release
+    if grep packed $problem/Rakefile; then
+        cp -r $problem/tests/test.{in,out}  $problem_release/
+    else
+        cp -r $problem/tests $problem_release
+    fi
 
     if test -f $problem/statement.cn.md; then
         cat $problem/statement.cn.md >> $STATEMENT
@@ -65,12 +69,12 @@ for problem in $(cat PROBLEMS); do
 done
 
 if [[ `uname -s` == "Darwin" ]]; then
-    engine_prefix='--latex-engine'
     font='Hiragino Sans GB'
 else
-    engine_prefix='--pdf-engine'
     font='Source Han Sans CN'
 fi
-pandoc $STATEMENT $engine_prefix=xelatex -V CJKmainfont="$font" --template=../template.tex -o"$RELEASE/statement.pdf"
+pandoc $STATEMENT --latex-engine=xelatex -V CJKmainfont="$font" --template=../template.tex -o"$RELEASE/statement.pdf" \
+|| pandoc $STATEMENT --pdf-engine=xelatex -V CJKmainfont="$font" --template=../template.tex -o"$RELEASE/statement.pdf"
+
 
 cd ..

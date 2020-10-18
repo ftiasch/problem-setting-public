@@ -1,0 +1,13 @@
+require_relative '../../common'
+
+packed {
+  sample '001.hand'
+  test :random, 10_000 - 3, 10, 5
+  test :random, 1_000, 100, 0
+  test :random, 100, 1_000, 0
+  test :random, 10, 10_000, 0
+  test :random, 1, 100_000, 0
+  test :random, 5, 100_000, 200_000
+}
+
+add_target :zimpha

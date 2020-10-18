@@ -1,0 +1,17 @@
+require_relative '../../common'
+
+packed {
+  sample '001.hand'
+  1.upto(10) do |n|
+    test :gen_all, n
+  end
+  test :gen, 10, 20, 1000000
+  test :gen, 100, 200, 1000000
+  test :gen, 1000, 2000, 1000000
+  test :gen, 10000, 20000, 1000000
+  test :gen, 100000, 200000, 1000000, 0
+  test :gen, 100000, 200000, 1000000, 1
+  test :gen, 1000000, 1000000, 1000000, 0
+  test :gen, 1000000, 1000000, 1000000, 1
+  test :gen, 1000000, 1000000, 1000000, 2
+}

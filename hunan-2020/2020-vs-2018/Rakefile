@@ -1,0 +1,8 @@
+require_relative '../../common'
+
+packed {
+  sample '001.hand'
+  test '002.hand'
+  test :random, 94, 15, 20
+  test :random, 1, 50, 50
+}

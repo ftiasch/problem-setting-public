@@ -1,0 +1,12 @@
+require_relative '../../common'
+
+packed {
+  sample '001.hand'
+  test :random, 1, 1, 1_000
+  test :random, 250, 2, 1_000 # 50w
+  test :random, 1, 3, 1_000
+  test :random, 1, 1_000, 450
+  test :random, 1, 1_000, 1_000 # 100w
+}
+
+add_target :slow

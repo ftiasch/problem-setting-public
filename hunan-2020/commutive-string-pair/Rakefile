@@ -1,0 +1,21 @@
+require_relative '../../common'
+
+def random(tests, n, length_sum, length_weight, alphabet, groups)
+  test :random, tests, n, length_sum, length_weight, alphabet, groups
+end
+
+packed {
+  sample '001.hand'
+  test :random, 1_000, 100, 500, 0, 10, 10
+  test :random, 1_000, 100, 500, 0, 26, 10
+  test :random, 100, 1_000, 5_000, 0, 10, 10
+  test :random, 100, 1_000, 5_000, 0, 26, 10
+  test :random, 1, 100_000, 500_000, 0, 2, 10_000
+  test :random, 1, 100_000, 500_000, 0, 10, 10_000
+  test :random, 1, 100_000, 500_000, 10_000, 2, 10_000
+  test :random, 1, 100_000, 500_000, 10_000, 10, 10_000
+  test :random, 1, 100_000, 500_000, 0, 26, 10_000
+  test :aaa, 100_000, 500_000, 0
+}
+
+add_target :slow
