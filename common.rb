@@ -21,7 +21,7 @@ def command(symbol)
   when "java"
     "java #{b}"
   when "py"
-    "python #{b}.py"
+    "python3 #{b}.py"
   when "rb"
     "ruby #{b}.rb"
   end
