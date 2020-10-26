@@ -33,13 +33,13 @@ def make_target(symbol)
   when "cc"
     target = "#{b}.exe"
     file target => "#{b}.cc" do
-      sh "clang-format -i #{b}.cc"
+      sh "clang-format -i #{b}.cc || true"
       sh "c++ -I../.. ${CXXFLAGS} #{b}.cc -o#{b}.exe"
     end
   when "cpp"
     target = "#{b}.exe"
     file target => "#{b}.cpp" do
-      sh "clang-format -i #{b}.cpp"
+      sh "clang-format -i #{b}.cpp || true"
       sh "c++ -I../.. ${CXXFLAGS} #{b}.cpp -o#{b}.exe"
     end
   when "java"
